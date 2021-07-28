@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+    <style>
+        .attribution {
+            font-size: 9px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+    <main class="main">
+        <div class="main__search">
+            <h1 class="heading">IP Address Tracker</h1>
+            <form action="#" class="form">
+                <input type="text" class="form__search" aria-label="Insert IP address here">
+                <button type="submit" class="form__btn"><img src="images/icon-arrow.svg" alt="Right Arrow" placeholder="Search for any IP address or domain"></button>
+            </form>
+            <div class="detail">
+                <div class="detail__ip">
+                    <p class="para para-primary">IP Address</p>
+                    <p class="para para-secondary ip"></p>
+                </div>
+                <div class="detail__location">
+                    <p class="para para-primary">Location</p>
+                    <p class="para para-secondary loc"></p>
+                </div>
+                <div class="detail__time">
+                    <p class="para para-primary">Timezone</p>
+                    <p class="para para-secondary time"></p>
+                </div>
+                <div class="detail__isp">
+                    <p class="para para-primary">ISP</p>
+                    <p class="para para-secondary isp"></p>
+                </div>
+
+
+
+
+                <!-- UTC -->
+                <!-- add offset value dynamically using the API -->
+
+            </div>
+
+        </div>
+        <div id="map" class="main__map">
+
+        </div>
+    </main>
+
+
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Harshit Soni</a>.
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+.main {
+    &__search {
+        display: flex;
+        min-height: 30rem;
+        background: url("../images/pattern-bg.png");
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0.5rem;
+        text-align: center;
+        @media only screen and(min-width: 801px) {
+            padding: 3rem;
+        }
+
+        .form {
+            margin-bottom: 3rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+
+            & > * {
+                border: none;
+                outline: none;
+            }
+
+            &__search {
+                padding: 1.5rem;
+                font-size: 1.6rem;
+                border-radius: 10px 0 0 10px;
+
+                &::placeholder {
+                    font-size: 1.6rem;
+                    color: var(--gray);
+                }
+            }
+
+            &__btn {
+                background: var(--dark-gray);
+                padding: 1.5rem;
+                border-radius: 0 10px 10px 0;
+            }
+        }
+
+        .detail {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media only screen and(min-width: 801px) {
+                flex-direction: row;
+            }
+            background: #fff;
+            padding: 2rem;
+            position: relative;
+            z-index: 2;
+            transform: translateY(7rem);
+            min-height: 10rem;
+            min-width: 80vw;
+            max-width: 90vw;
+            border-radius: 10px;
+            justify-content: space-evenly;
+
+            & > * {
+                flex: 1;
+                padding: 0 1.5rem;
+                &:not(:last-child) {
+                    margin-bottom: 2rem;
+                }
+                @media only screen and(min-width: 801px) {
+                    margin-bottom: 0;
+                    &:not(:last-child) {
+                        border-right: 1px solid black;
+                    }
+                }
+
+            }
+
+
+        }
+    }
+
+    &__map {
+        min-height: 70vh;
+        display: flex;
+        position: relative;
+        z-index:1;
+        grid-row: 2 / 3;
+        background: #eee;
+    }
+}

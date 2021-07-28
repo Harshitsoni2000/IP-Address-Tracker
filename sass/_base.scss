@@ -1,0 +1,48 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-gray: hsl(0, 0%, 17%);
+    --gray: hsl(0, 0%, 59%);
+}
+
+html {
+    font-size: 50%;
+    @media (min-width: 900px) {
+        font-size: 55%;
+    }
+    @media (min-width: 1200px) {
+        font-size: 62.5%;
+    }
+}
+
+body {
+    display: grid;
+}
+
+.heading {
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.para {
+
+    &-primary {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: var(--gray);
+        margin-bottom: 1rem;
+    }
+
+    &-secondary {
+        font-size: 2.5rem;
+        color: var(--dark-gray);
+        font-weight: 700;
+    }
+}
